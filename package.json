@@ -1,13 +1,13 @@
 {
   "name": "@evmos-domains/ensjs",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "ens.js v2",
   "main": "dist/index.js",
   "repository": {
     "url": "github.com/evmosdomains/ensjs",
     "type": "git"
   },
-    "files": [
+  "files": [
     "dist"
   ],
   "scripts": {
