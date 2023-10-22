@@ -1,5 +1,5 @@
 {
-  "name": "@evmosdomains/ensjs",
+  "name": "@evmos-domains/ensjs",
   "version": "2.1.0",
   "description": "ens.js v2",
   "main": "dist/index.js",
