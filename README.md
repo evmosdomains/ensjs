@@ -1,6 +1,4 @@
-## Note: We are working on the next version of this library, which will include batch calling and other features. Once that is out, we will be deprecating this library. We generally recommend [ethers.js](https://docs.ethers.io/v5/api/providers/provider/#Provider--ens-methods)
-
-# ENS.js V2
+# ENS.js V2 for Evmos Mainnet
 
 This is the rewrite of `ensjs`. If you are looking for the previous version, look for [ethereum-ens](https://www.npmjs.com/package/ethereum-ens)
 
@@ -9,7 +7,7 @@ This is the rewrite of `ensjs`. If you are looking for the previous version, loo
 ### Setup
 
 ```
-import ENS, { getEnsAddress } from '@ensdomains/ensjs'
+import ENS, { getEnsAddress } from '@evmosdomains/ensjs'
 
 
 

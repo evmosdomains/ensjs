@@ -56,7 +56,7 @@ export async function setupWeb3({ Web3, provider }) {
           'No web3 instance injected. Falling back to cloud provider.'
         )
         readOnly = true
-        web3 = new Web3(getNetworkProviderUrl('1'))
+        web3 = new Web3(getNetworkProviderUrl('9001'))
         web3Read = web3
         return web3
       }
@@ -95,7 +95,9 @@ function getNetworkProviderUrl(id) {
     case '4':
       return `https://rinkeby.infura.io/v3/90f210707d3c450f847659dc9a3436ea`
     case '5':
-      return `https://goerli.infura.io/v3/90f210707d3c450f847659dc9a3436ea`
+      return `https://goerli.infura.io/v3/90f210707d3c450f847659dc9a3436ea`    
+    case '9001':
+      return `https://evmos.lava.build`
     default:
       return 'private'
   }

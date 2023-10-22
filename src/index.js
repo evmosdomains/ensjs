@@ -1,6 +1,6 @@
 import { ethers } from 'ethers'
 const Provider = ethers.providers.Provider
-import { formatsByName } from '@ensdomains/address-encoder'
+import { formatsByName } from '@evmosdomains/address-encoder'
 import { abi as ensContract } from '@ensdomains/ens/build/contracts/ENS.json'
 import { abi as resolverContract } from '@ensdomains/resolver/build/contracts/Resolver.json'
 import { abi as reverseRegistrarContract } from '@ensdomains/ens/build/contracts/ReverseRegistrar.json'
@@ -16,6 +16,8 @@ const utils = ethers.utils
 function getEnsAddress(networkId) {
   if ([1, 3, 4, 5].includes(parseInt(networkId))) {
     return '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e'
+  } else if (parseInt(networkId) === 9001) {
+    return '0xae9da235a2276caa3f6484ad8f0efbf4e0d45246'
   }
 }
 

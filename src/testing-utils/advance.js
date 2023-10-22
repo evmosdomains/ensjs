@@ -36,7 +36,7 @@ const mine = util.promisify(function(web3, done) {
 })
 
 async function init() {
-  let provider = new Web3.providers.HttpProvider('http://localhost:8545')
+  let provider = new Web3.providers.HttpProvider('https://evmos.lava.build')
   let { web3 } = await setupWeb3(provider)
   let current = await web3.eth.getBlock('latest');
   console.log(`The current time is ${new Date(current.timestamp * 1000)}`)

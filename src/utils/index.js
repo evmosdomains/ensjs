@@ -32,7 +32,10 @@ function getEnsStartBlock(networkId) {
       return 3327417
     case 3:
     case '3':
-      return 25409
+      return 25409    
+    case 9001:
+    case '9001':
+      return 610284
     default:
       return 0
   }
@@ -83,7 +86,7 @@ const parseSearchTerm = (term, validTld) => {
     const termArray = term.split('.')
     const tld = term.match(regex) ? term.match(regex)[0] : ''
     if (validTld) {
-      if (tld === 'eth' && termArray[termArray.length - 2].length < 3) {
+      if (tld === 'evmos' && termArray[termArray.length - 2].length < 3) {
         return 'short'
       }
       return 'supported'
