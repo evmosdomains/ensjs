@@ -1,19 +1,19 @@
 {
   "name": "@evmos-domains/ensjs",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "ens.js v2",
   "main": "dist/index.js",
-  "repository": "evmosdomains/ensjs",
-  "files": [
+  "repository": {
+    "url": "github.com/evmosdomains/ensjs",
+    "type": "git"
+  },
+    "files": [
     "dist"
   ],
   "scripts": {
     "test": "jest --verbose",
     "build": "babel src -d dist --ignore src/**/*.test.js,**/__tests__/**,src/testing-utils",
     "pub": "yarn build && yarn publish --access public"
-  },
-  "publishConfig": {
-    "@evmos-domains:registry": "https://npm.pkg.github.com"
   },
   "author": "",
   "license": "ISC",
@@ -49,9 +49,9 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.4.4",
-    "@evmosdomains/address-encoder": "^0.2.17",
     "@ensdomains/ens": "0.4.5",
     "@ensdomains/resolver": "0.2.4",
+    "@evmosdomains/address-encoder": "^0.2.17",
     "content-hash": "^2.5.2",
     "eth-ens-namehash": "^2.0.8",
     "ethers": "^5.0.13",
